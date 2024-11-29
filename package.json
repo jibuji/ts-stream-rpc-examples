@@ -1,0 +1,23 @@
+{
+  "name": "ts-stream-rpc-examples",
+  "version": "1.0.0",
+  "description": "Examples for ts-stream-rpc library",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "generate": "node scripts/generate.js",
+    "start:calculator-server": "node --experimental-specifier-resolution=node --loader ts-node/esm src/calculator/server.ts",
+    "start:calculator-client": "node --experimental-specifier-resolution=node --loader ts-node/esm src/calculator/client.ts"
+  },
+  "dependencies": {
+    "protobufjs": "^7.2.5",
+    "ts-stream-rpc": "^1.0.3",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/ws": "^8.5.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.9.5"
+  }
+}
